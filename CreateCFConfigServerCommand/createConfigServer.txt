@@ -1,0 +1,1 @@
+cf create-service p-config-server standard testConfigServer -c '{"git":{"uri":"https://github.com/kleung/TestCFConfigServer","searchPaths":"TestCFConfig"}}'
