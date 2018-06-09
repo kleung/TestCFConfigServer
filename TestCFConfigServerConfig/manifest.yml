@@ -1,0 +1,11 @@
+---
+applications:
+-  name: TestCFConfigServerConfig
+   memory: 256M
+   instances: 1
+   path: ./target/TestCFConfigServerConfig-0.0.1-SNAPSHOT.jar
+   env:
+      SPRING_PROFILES_ACTIVE: local
+      JBP_CONFIG_DEBUG: '{enabled: true}'
+   services:
+     - testConfigServer
